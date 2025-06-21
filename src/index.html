@@ -1,0 +1,62 @@
+<!-- Draft of HTTP response, translated to the CPP file by hand  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Controller</title>
+    <style>
+        .on {
+            padding: 2%;
+            border: 2px solid lightgreen;
+            background-color: white;
+            transition-duration: 0.25s;
+        }
+        .on:hover {
+            background-color:lightgreen;
+        }
+        .off { 
+            padding: 2%;
+            border: 2px solid lightcoral;
+            background-color: white;
+            transition-duration: 0.25s;
+        }
+        .off:hover {
+            background-color:lightcoral;
+        }
+        * {
+            font-size: large;
+            font-family: sans-serif;
+        }
+        h1 {
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <h1>Toggle LED</h1>
+    <button class="on">Turn on LED</button>
+    <button class="off">Turn off LED</button>
+    <h1>Toggle RGB</h1>
+    <input type="checkbox" id="rgb" name="rgb">
+    <h1>Edit speed</h1>
+    <form>
+        <input type="range" min="3" max="30" value="11"> 
+        <button type="submit">Save</button>
+    </form>
+    <h1>Edit colour</h1>
+    <form>
+        <label for="red">R</label>
+        <input type="range" min="0" max="255" value="255">
+        <br>
+        <label for="green">G</label>
+        <input type="range" min="0" max="255" value="255">
+        <br>
+        <label for="blue">B</label>
+        <input type="range" min="0" max="255" value="255">
+        <br>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
