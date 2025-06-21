@@ -1,6 +1,11 @@
 # ESP32 LED Web Controller
 ## A simple web controller for IKEA RGB LED strips on ESP32 and PlatformIO
 
+### Demo
+Enjoy this crappy GIF showing how the project works.
+![demo](https://github.com/user-attachments/assets/5e998ddd-a19d-4d09-a147-d736357edda7)
+
+
 ### Requirements
 - ESP32 denky/WROOM32
 - Jumpers (4)
@@ -14,4 +19,3 @@
 - Use jumpers to connect corresponding GPIO pins to LED pins
 - Access controller in browser by entering ESP32's local IP (displayed in Serial monitor during startup)
 
-![Enjoy this crappy GIF demo](https://github.com/user-attachments/assets/5e998ddd-a19d-4d09-a147-d736357edda7)
